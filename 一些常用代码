@@ -1,0 +1,9 @@
+/**  1. 判断线程池中线程是否都完成   **/
+
+while (!(threadPoolExecutor.getTaskCount() == threadPoolExecutor.getCompletedTaskCount())) {
+    System.out.println("任务总数:" + threadPoolExecutor.getTaskCount() + "； 已经完成任务数:" + threadPoolExecutor.getCompletedTaskCount());
+    Thread.sleep(1000);
+}
+
+/**  2. 利用hutool工具将数据存入缓存   **/
+CacheUtil.newFIFOCache(10);

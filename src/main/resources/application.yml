@@ -1,0 +1,22 @@
+server:
+  port: 8060
+spring:
+#  设置项目启动可以访问templates目录下的静态页面
+  web:
+    resources:
+      static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,classpath:/templates/
+  datasource:
+    url: jdbc:mysql://192.168.3.230:3306/query_system?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: Scistor@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# 线程池参数设置
+asyn:
+  executor:
+    thread:
+      core_pool_size: 30
+      max_pool_size: 30
+      queue_capacity: 99988
+      name:
+        prefix: async-importDB-

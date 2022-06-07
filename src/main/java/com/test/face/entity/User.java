@@ -1,4 +1,4 @@
-package com.test.face;
+package com.test.face.entity;
 
 import lombok.*;
 

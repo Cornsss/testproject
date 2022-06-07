@@ -1,7 +1,8 @@
-package com.test.face;
+package com.test.face.controller;
 
 import com.baidu.aip.face.AipFace;
 import com.test.base.ViewResponse;
+import com.test.face.entity.User;
 import com.test.utils.ImageUtil;
 import com.test.utils.StringUtils;
 import org.json.JSONObject;

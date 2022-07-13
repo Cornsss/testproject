@@ -7,3 +7,24 @@ while (!(threadPoolExecutor.getTaskCount() == threadPoolExecutor.getCompletedTas
 
 /**  2. 利用hutool工具将数据存入缓存   **/
 CacheUtil.newFIFOCache(10);
+
+
+/**  3. 关闭mysql中休眠的连接  **/
+#!/bin/sh
+user=root
+passwd=Scistor@123
+while :
+do
+n=`mysqladmin processlist -u$user -p$passwd | grep -i sleep | wc -l`
+date=`date +%Y%m%d[%H:%M:%S]`
+echo $n
+if [ "$n" -gt 50 ]; then
+for i in `mysqladmin processlist -u$user -p$passwd| grep -i sleep | awk '{print $2}'`
+do
+mysqladmin -u$user -p$passwd kill $i
+done
+echo "sleep is too many I killed it "
+echo "$date : $n"
+fi
+sleep 1
+done

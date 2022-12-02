@@ -14,7 +14,7 @@ import java.util.Properties;
 * @version 1.0 
 */
 public class JdbcUtils {
-
+    public static String test;
     public static final String DRIVERCLASS;
     public static final String URL;
     public static final String USERNAME;

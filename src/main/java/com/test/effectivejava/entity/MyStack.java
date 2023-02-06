@@ -3,10 +3,10 @@ package com.test.effectivejava.entity;
 import java.util.Arrays;
 import java.util.EmptyStackException;
 
-public class MyStack implements Cloneable{
+public class MyStack<E> implements Cloneable{
 
     // 存放元素的容器
-    private Object[] elements;
+    private E[] elements;
 
     // 元素个数
     private int size = 0;
@@ -14,11 +14,13 @@ public class MyStack implements Cloneable{
     // 初始化容器大小
     private final int INITIAL_CAPACITY_SIZE = 16;
 
+    @SuppressWarnings("这里的数组是传给push那些方法的，不会传递给客户端")
     public MyStack() {
-        this.elements = new Object[INITIAL_CAPACITY_SIZE];
+//        this.elements = new E[INITIAL_CAPACITY_SIZE]; // 编译异常
+        this.elements = (E[]) new Object[INITIAL_CAPACITY_SIZE]; // 不是类型安全的 Unchecked cast: 'java.lang.Object[]' to 'E[]',加上注解
     }
 
-    public void push(Object element) {
+    public void push(E element) {
         // 判断是否需要扩容
         ensureSize();
         // 加入元素
@@ -29,12 +31,12 @@ public class MyStack implements Cloneable{
         return this.size;
     }
 
-    public Object pop() {
+    public E pop() {
         if (size == 0) {
             throw new EmptyStackException();
         }
         // 消除无用的对象引用
-        Object obj = elements[--size];
+        E obj = elements[--size];
         elements[size] = null;
         return obj;
     }

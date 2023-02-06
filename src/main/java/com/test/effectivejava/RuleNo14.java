@@ -9,7 +9,8 @@ import java.util.*;
  * 考虑实现Comparable接口
  * 1. compareTo方法也遵循equals的特性
  * 2. compareTo比较不同类型对象会抛出ClassCastException
- * 3. 如果一个对象多个域需要比较，Comparable接口提供了静态比较器构造方法:
+ * 3. 如果一个对象多个域需要比较，Comparable接口提供了静态比较器构造方法:comparingInt
+ * 总结：尽量使用Comparator的比较器构造方法，和静态装箱的compare方法
  */
 public class RuleNo14 {
     public static void main(String[] args) {

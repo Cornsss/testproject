@@ -5,6 +5,10 @@ import java.util.Locale;
 
 /**
  * @author tracymc_zhu
+ *
+ * 如果需要复习，可以阅读：https://cl0610.github.io/effective-java-learning
+ * 更加易懂一些
+ *
  * @apiNote 用静态工厂方法替代构造器
  * 1. 使返回的方法更有标识性
  * 2. 不用每次都new对象

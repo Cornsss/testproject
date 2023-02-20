@@ -1,4 +1,4 @@
-package com.test.effectivejava;
+package com.test.effectivejava.Chapter6_枚举和注解;
 
 /**
  * 策略枚举

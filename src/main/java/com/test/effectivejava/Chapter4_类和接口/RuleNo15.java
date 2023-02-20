@@ -1,4 +1,4 @@
-package com.test.effectivejava;
+package com.test.effectivejava.Chapter4_类和接口;
 
 /**
  * @author tracymc_zhu

@@ -1,4 +1,4 @@
-package com.test.effectivejava;
+package com.test.effectivejava.Chapter2_创建和销毁对象;
 
 /**
  * @author tracymc_zhu

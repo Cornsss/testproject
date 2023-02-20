@@ -1,6 +1,5 @@
-package com.test.effectivejava;
+package com.test.effectivejava.Chapter4_类和接口;
 
-import com.test.effectivejava.entity.Father;
 import com.test.effectivejava.entity.Son;
 
 /**

@@ -1,4 +1,4 @@
-package com.test.effectivejava;
+package com.test.effectivejava.Chapter5_泛型;
 
 /**
  * 利用有限制通配符来提升API的灵活性

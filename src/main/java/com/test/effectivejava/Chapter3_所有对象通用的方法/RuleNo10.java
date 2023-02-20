@@ -1,8 +1,6 @@
-package com.test.effectivejava;
+package com.test.effectivejava.Chapter3_所有对象通用的方法;
 
-import java.sql.Timestamp;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 

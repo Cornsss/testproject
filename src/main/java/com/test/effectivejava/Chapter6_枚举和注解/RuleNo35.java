@@ -1,4 +1,6 @@
-package com.test.effectivejava;
+package com.test.effectivejava.Chapter6_枚举和注解;
+
+import com.test.effectivejava.Chapter5_泛型.Operation;
 
 /**
  * 实例域代替序数

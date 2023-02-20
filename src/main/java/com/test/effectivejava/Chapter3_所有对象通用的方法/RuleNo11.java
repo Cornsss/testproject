@@ -1,11 +1,7 @@
-package com.test.effectivejava;
+package com.test.effectivejava.Chapter3_所有对象通用的方法;
 
 
 import com.test.effectivejava.entity.PhoneNumber;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
 
 /**
  * @author tracymc_zhu

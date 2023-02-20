@@ -1,4 +1,4 @@
-package com.test.effectivejava;
+package com.test.effectivejava.Chapter5_泛型;
 
 import com.test.effectivejava.entity.PhoneNumber;
 
